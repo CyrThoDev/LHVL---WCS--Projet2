@@ -8,7 +8,6 @@ export default function Home() {
       <p>Hello Vite + React !</p>
 
       <Counter />
-
       <p>
         Edit <code>App.jsx</code> and save to test HMR updates.
       </p>
