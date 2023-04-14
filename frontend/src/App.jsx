@@ -1,4 +1,3 @@
-import Home from "./pages/Home";
 // US 1 import
 
 // US 2 Import
@@ -7,18 +6,26 @@ import Home from "./pages/Home";
 
 // US 4 import
 
-
 import "./App.css";
+import "./sass/style.scss";
+// import SuperHeroes from "./assets/data/data"
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      {/** US 1 Page */}
-      {/** US 2 Page */}
-      {/** US 3 Page */}
+    <div>
+      <header>{/** US 1 Page */}Logo + image + menu + about</header>
+      <main>
+        <div className="carrousel">Carrousel</div>
+        <div className="all-ctg">Catégories principales DC Comics & Marvel</div>
+        <div className="btn-ctg">Boutons Catégories</div>
+      </main>
+      <footer>
+        {/** US 3 Page */}
+        <p>Les héros de la vente en ligne</p>
+        <p>Contact</p>
+        {/* Copyright et formulaire */}
+      </footer>
       {/** US 4 Page */}
-      <p>coucou</p>
     </div>
   );
 }
