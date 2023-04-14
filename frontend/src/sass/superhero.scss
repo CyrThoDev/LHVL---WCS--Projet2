@@ -1,6 +1,6 @@
 @import "style.scss";
 
-.card-container {
+.superhero-container {
   display: flex;
   flex-direction: column;
   border: 2px solid black;
@@ -24,10 +24,4 @@
     color: $bluecolor;
     font-family: $category-font;
   }
-}
-
-.superHeroes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }

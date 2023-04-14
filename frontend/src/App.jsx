@@ -1,7 +1,7 @@
 // US 1 import
 
 // US 2 Import
-import AllCards from "./components/AllCards";
+import AllCards from "./pages/AllCards";
 
 // US 3 import
 
@@ -9,7 +9,6 @@ import AllCards from "./components/AllCards";
 
 import "./App.css";
 import "./sass/style.scss";
-import SuperHeroes from "./assets/data/data";
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
         <div className="btn-ctg">Boutons Catégories</div>
       </main>
       {/** US 2 Page */}
-      <AllCards superheroes={SuperHeroes} />
+      <AllCards />
       {/** US 3 Page */}
       <footer>
         <p>Les héros de la vente en ligne</p>
