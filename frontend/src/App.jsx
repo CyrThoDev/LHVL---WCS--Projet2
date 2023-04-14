@@ -1,20 +1,20 @@
-// import Home from "./pages/Home";
 // US 1 import
-import SuperCard from "./pages/SuperCard";
+// import SuperCard from "./pages/SuperCard";
 // US 2 Import
-
+// import AllCards from "./pages/AllCards";
 // US 3 import
 
 // US 4 import
 
 import "./App.css";
 import "./sass/style.scss";
+// import SuperHeroes from "./assets/data/data"
 
 function App() {
   return (
     <div>
       <header>{/** US 1 Page */}Logo + image + menu + about</header>
-      <SuperCard />
+      {/* <AllCards superheroes={SuperHeroes}/> */}
       <main>
         <div className="carrousel">Carrousel</div>
         <div className="all-ctg">Catégories principales DC Comics & Marvel</div>
@@ -27,7 +27,6 @@ function App() {
         {/* Copyright et formulaire */}
       </footer>
       {/** US 4 Page */}
-      {/* <Home /> */}
     </div>
   );
 }

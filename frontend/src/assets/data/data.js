@@ -1,4 +1,4 @@
-const superHero =[
+const SuperHeroes =[
     {
       "id": 1,
       "name": "A-Bomb",
@@ -11823,3 +11823,5 @@ const superHero =[
       "combat": 28
     }
   ]
+
+  export default SuperHeroes ; 

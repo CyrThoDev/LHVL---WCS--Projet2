@@ -1,47 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade');
+@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade");
 
 @font-face {
-  font-family: 'Magz';
-  src: url('../fonts/Magz.otf') format('open-type');
+  font-family: "Magz";
+  src: url("../fonts/Magz.otf") format("open-type");
 }
 
-$title-font:'bungee'; 
-$category-font : 'Magz'; 
-$text-font:roboto; 
-$blackcolor:black; 
-$whitecolor:white; 
-$bluecolor: #1f69aa; 
-$yellowcolor: #f2cf1d; 
-$greycolor:#8d8D8d; 
-
-
-
+$title-font: "bungee";
+$category-font: "Magz";
+$text-font: roboto;
+$blackcolor: black;
+$whitecolor: white;
+$bluecolor: #1f69aa;
+$yellowcolor: #f2cf1d;
+$greycolor: #8d8d8d;
 
 header {
-display:flex;
-height: 15rem; 
-justify-content: center;
-align-items: center;  
-background-color :$whitecolor; 
-margin :1rem; 
-font-family: $title-font;
-
+  display: flex;
+  height: 15rem;
+  justify-content: center;
+  align-items: center;
+  background-color: $whitecolor;
+  margin: 1rem;
+  font-family: $title-font;
 }
 
 main {
   font-family: $text-font;
-  background-color :$whitecolor;
+  background-color: $whitecolor;
   justify-content: center;
-  align-items: center;  
-  margin :1rem; 
-  display:flex;
-  flex-direction:column; 
+  align-items: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
   height: 40rem;
 
-  .carrousel{
-  height: 40rem; 
-  width:100%; 
-
+  .carrousel {
+    height: 40rem;
+    width: 100%;
   }
 
   .all-ctg {
@@ -50,22 +45,18 @@ main {
   }
 
   .btn-ctg {
-    height: 60rem; 
+    height: 60rem;
   }
 }
 
-
-
-
-
 footer {
-  font-family: 'Magz';
-  margin :1rem; 
-  display:flex;
-  height: 5rem; 
-  background-color :$blackcolor;
+  font-family: "Magz";
+  margin: 1rem;
+  display: flex;
+  height: 5rem;
+  background-color: $blackcolor;
   color: $whitecolor;
   justify-content: space-between;
-  align-items:center; 
+  align-items: center;
   font-size: 1.2rem;
 }
