@@ -1,7 +1,7 @@
 // US 1 import
-// import SuperCard from "./pages/SuperCard";
+
 // US 2 Import
-// import AllCards from "./pages/AllCards";
+
 // US 3 import
 
 // US 4 import
@@ -14,7 +14,6 @@ function App() {
   return (
     <div>
       <header>{/** US 1 Page */}Logo + image + menu + about</header>
-      {/* <AllCards superheroes={SuperHeroes}/> */}
       <main>
         <div className="carrousel">Carrousel</div>
         <div className="all-ctg">Catégories principales DC Comics & Marvel</div>
