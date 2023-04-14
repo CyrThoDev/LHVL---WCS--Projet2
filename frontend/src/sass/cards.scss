@@ -1,0 +1,33 @@
+@import "style.scss";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 5%;
+
+  img {
+    padding: 1rem;
+  }
+  button {
+    padding: 1rem;
+    margin: 10px;
+    font-family: $title-font;
+    color: $whitecolor;
+    background-color: $bluecolor;
+    border: 2px solid $bluecolor;
+    border-radius: 50% 20% / 10% 40%;
+  }
+  figcaption {
+    text-align: center;
+    margin-top: 10px;
+    color: $bluecolor;
+    font-family: $category-font;
+  }
+}
+
+.superHeroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
