@@ -3,6 +3,7 @@
 footer {
   font-family: "Magz";
   margin: 1rem;
+  padding: 0 2rem;
   display: flex;
   height: 5rem;
   background-color: $blackcolor;
@@ -10,4 +11,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
+
+  .contact {
+    padding-right: 2rem;
+  }
 }

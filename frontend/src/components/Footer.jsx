@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-      <p>Les héros de la vente en ligne</p>
-      <Link to="/contact">Contact</Link>
+      <div>Les héros de la vente en ligne</div>
+      <div className="contact">
+        <Link to="/contact">Contact</Link>
+      </div>
     </footer>
   );
 }

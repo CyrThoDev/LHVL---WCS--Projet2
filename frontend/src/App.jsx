@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // US 3 import
 import Footer from "@components/Footer";
 import Contact from "@pages/Contact";
-import AllCards from "./pages/AllCards";
+// import AllCards from "./pages/AllCards";
 // US 4 import
 
 import "./App.css";
@@ -17,13 +17,13 @@ function App() {
   return (
     <Router>
       <header>{/** US 1 Page */}Logo + image + menu + about</header>
-      <main>
+      {/* <main>
         <div className="carrousel">Carrousel</div>
         <div className="all-ctg">Catégories principales DC Comics & Marvel</div>
         <div className="btn-ctg">Boutons Catégories</div>
-      </main>
+      </main> */}
       {/** US 2 Page */}
-      <AllCards />
+      {/* <AllCards /> */}
       {/** US 3 Page */}
       {/** US 4 Page */}
       {/* Add your routes here  */}
