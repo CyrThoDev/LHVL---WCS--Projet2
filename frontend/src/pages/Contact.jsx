@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import "../sass/contact.scss";
 
 function Contact() {
-  const [name, setName] = useState("Your name");
-  const [email, setEmail] = useState("Your email");
-  const [message, setMessage] = useState("Your message");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
-    <>
-      <div>Contact</div>
+    <div className="contact-container">
+      <h3>Contact us</h3>
       <form className="form-container">
         <label>
-          Enter your name:
+          Your name:
           <input
             type="text"
             value={name}
@@ -19,7 +19,7 @@ function Contact() {
           />
         </label>
         <label>
-          Enter your Email:
+          Your Email:
           <input
             type="email"
             value={email}
@@ -31,14 +31,12 @@ function Contact() {
           <input
             type="textarea"
             value={message}
-            rows={5}
-            cols={5}
             onChange={(e) => setMessage(e.target.value)}
           />
         </label>
         <button type="submit">Submit</button>
       </form>
-    </>
+    </div>
   );
 }
 
