@@ -1,15 +1,34 @@
 import React, { useState } from "react";
+
+// import {useForm} from "react-hook-form";
 import "../sass/contact.scss";
 
 function Contact() {
+  // const { handleSubmit } = useForm();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  const onSubmit = (e) => {
+    alert("Thanks for submitting");
+    e.preventDefault();
+    clearForm();
+  };
+
+  // const handleSubmit =() => {
+
+  // }
+
   return (
     <div className="contact-container">
       <h3>Contact us</h3>
-      <form className="form-container">
+      <form className="form-container" onSubmit={onSubmit}>
         <label>
           Your name:
           <input
