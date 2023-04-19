@@ -1,0 +1,13 @@
+@import "style.scss";
+
+footer {
+  font-family: "Magz";
+  margin: 1rem;
+  display: flex;
+  height: 5rem;
+  background-color: $blackcolor;
+  color: $whitecolor;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
