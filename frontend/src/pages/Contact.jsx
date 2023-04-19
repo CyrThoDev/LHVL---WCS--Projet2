@@ -23,7 +23,6 @@ function Contact() {
   };
 
   // const handleSubmit =() => {
-
   // }
 
   return (
