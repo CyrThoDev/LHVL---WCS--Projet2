@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import superheromail from "./superheromail.png";
 
 // import {useForm} from "react-hook-form";
 import "../sass/contact.scss";
@@ -28,6 +29,7 @@ function Contact() {
   return (
     <div className="contact-container">
       <h3>Contact us</h3>
+      <img src={superheromail} alt="SuperheroContactForm" width="350px" />
       <form className="form-container" onSubmit={onSubmit}>
         <label>
           Your name:
