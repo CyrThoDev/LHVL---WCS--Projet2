@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // US 2 Import
 
 // US 3 import
-import Footer from "@components/Footer";
-import Contact from "@pages/Contact";
+import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 // import AllCards from "./pages/AllCards";
 // US 4 import
 
