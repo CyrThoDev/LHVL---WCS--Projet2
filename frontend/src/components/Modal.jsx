@@ -39,7 +39,6 @@ function Modal({ superhero, setOpenModal }) {
             <p>
               <strong>Name:</strong> {superhero.name}
             </p>
-            {}
           </div>
           <img
             className="superhero-image"
