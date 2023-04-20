@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import superheromail from "./superheromail.png";
-
-// import {useForm} from "react-hook-form";
 import "../sass/contact.scss";
 
 function Contact() {
-  // const { handleSubmit } = useForm();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -17,13 +14,9 @@ function Contact() {
   };
 
   const onSubmit = (e) => {
-    alert("Thanks for submitting");
     e.preventDefault();
     clearForm();
   };
-
-  // const handleSubmit =() => {
-  // }
 
   return (
     <div className="contact-container">
