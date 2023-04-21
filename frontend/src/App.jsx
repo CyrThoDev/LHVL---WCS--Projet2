@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 
 // US 1 import
 
@@ -16,13 +17,12 @@ import "./sass/style.scss";
 function App() {
   return (
     <Router>
-      <header>{/** US 1 Page */}Logo + image + menu + about</header>
       {/* <main>
         <div className="carrousel">Carrousel</div>
         <div className="all-ctg">Catégories principales DC Comics & Marvel</div>
         <div className="btn-ctg">Boutons Catégories</div>
       </main> */}
-      {/** US 2 Page */}
+      <Header />
       {/* <AllCards /> */}
       {/** US 3 Page */}
       {/** US 4 Page */}
