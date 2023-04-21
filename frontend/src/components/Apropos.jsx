@@ -3,10 +3,12 @@ import "../sass/header.scss";
 function Apropos() {
   return (
     <div>
-      <button type="button" className="about">
+      <a href="/apropos" className="about">
+        {" "}
+        {/* Remplacez "/apropos" par l'URL souhaitée */}
         À PROPOS
         <br />
-      </button>
+      </a>
     </div>
   );
 }
