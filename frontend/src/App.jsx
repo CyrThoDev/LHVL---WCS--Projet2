@@ -1,10 +1,13 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 // US 1 import
 
 // US 2 Import
-import AllCards from "./pages/AllCards";
 
 // US 3 import
-
+import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
+// import AllCards from "./pages/AllCards";
 // US 4 import
 
 import "./App.css";
@@ -12,23 +15,24 @@ import "./sass/style.scss";
 
 function App() {
   return (
-    <div>
+    <Router>
       <header>{/** US 1 Page */}Logo + image + menu + about</header>
-      <main>
+      {/* <main>
         <div className="carrousel">Carrousel</div>
         <div className="all-ctg">Catégories principales DC Comics & Marvel</div>
         <div className="btn-ctg">Boutons Catégories</div>
-      </main>
+      </main> */}
       {/** US 2 Page */}
-      <AllCards />
+      {/* <AllCards /> */}
       {/** US 3 Page */}
-      <footer>
-        <p>Les héros de la vente en ligne</p>
-        <p>Contact</p>
-        {/* Copyright et formulaire */}
-      </footer>
       {/** US 4 Page */}
-    </div>
+      {/* Add your routes here  */}
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+      {/* Copyright et formulaire */}
+    </Router>
   );
 }
 
