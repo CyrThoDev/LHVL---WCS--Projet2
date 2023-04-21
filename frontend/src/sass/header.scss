@@ -1,0 +1,137 @@
+@import "style.scss";
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20rem;
+  justify-content: center;
+  margin: 1rem;
+  font-family: $title-font;
+}
+
+.navigation-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.Explore-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.default-option {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.selected-option {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menu-open .options-container {
+  display: block; /* affiche les options lorsque le menu est ouvert */
+}
+
+.selected-option {
+  text-decoration: none; /*Pour que le lien ne soit plus "souligné"...*/
+  color: black; /*ça reste un exemple*/
+}
+
+button.default-option {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+  margin-left: 2rem;
+}
+
+.options-container {
+  position: absolute;
+  top: calc(
+    100% + 5px
+  ); /* positionne les options en dessous de la zone de sélection */
+  left: 0;
+  width: 100%;
+  max-height: 200px; /* définir la hauteur maximale de l'élément déroulant */
+  overflow-y: auto; /* ajoute la barre de défilement si les options dépassent la hauteur maximale */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.options-container {
+  position: absolute;
+  top: calc(
+    100% + 5px
+  ); /* positionne les options en dessous de la zone de sélection */
+  left: 0;
+  width: 100%;
+  max-height: 200px; /* définir la hauteur maximale de l'élément déroulant */
+  overflow-y: auto; /* ajoute la barre de défilement si les options dépassent la hauteur maximale */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none; /* masque les options par défaut */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.slogan-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+  width: 11rem;
+}
