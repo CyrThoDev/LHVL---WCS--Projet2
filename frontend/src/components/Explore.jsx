@@ -1,23 +1,24 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../sass/header.scss";
 
 function Explore() {
   const options = [
-    { label: "Les Super-Catégories 🦸‍♂️", link: "https://example.com/page1" },
-    { label: "Tous les Héros de A à Z", link: "https://example.com/page1" },
-    { label: "Les plus populaires", link: "https://example.com/page1" },
-    { label: "Tous les univers", link: "https://example.com/page1" },
-    { label: "Les meilleures ventes", link: "https://example.com/page1" },
+    { label: "Les Super-Catégories 🦸‍♂️", link: "/page1" },
+    { label: "Tous les Héros de A à Z", link: "/page2" },
+    { label: "Les plus populaires", link: "/page3" },
+    { label: "Tous les univers", link: "/page4" },
+    { label: "Les meilleures ventes", link: "/page5" },
   ];
-  const [menuOpen, setMenuOpen] = useState(false); // état pour le menu déroulant
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
-    setMenuOpen(!menuOpen); // inverse la valeur de l'état pour ouvrir ou fermer le menu
+    setMenuOpen(!menuOpen);
   };
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      setMenuOpen(!menuOpen); // inverse la valeur de l'état pour ouvrir ou fermer le menu
+      setMenuOpen(!menuOpen);
     }
   };
 
@@ -43,7 +44,7 @@ function Explore() {
               return (
                 <div key={option.label}>
                   <br />
-                  <a href={option.link}>{option.label}</a>
+                  <Link to={option.link}>{option.label}</Link>
                 </div>
               );
             })}
