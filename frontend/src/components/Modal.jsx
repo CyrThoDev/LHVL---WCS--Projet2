@@ -2,28 +2,14 @@ import React from "react";
 import "../sass/modal.scss";
 
 function Modal({ superhero, setOpenModal }) {
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  };
-
   return (
     <div className="modalBackground">
-      <div
-        className="modalContainer"
-        onClick={(e) => {
-          e.stopPropagation();
-        }}
-        onKeyDown={handleKeyDown}
-        tabIndex="0"
-        role="button"
-      >
+      <div className="modalContainer">
         <div className="titleCloseBtn">
           <button
             type="button"
-            onClick={() => {
+            onClick={(e) => {
+              e.stopPropagation();
               setOpenModal(false);
             }}
           >
