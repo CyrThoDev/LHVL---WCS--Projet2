@@ -10,8 +10,6 @@ function NavBar() {
       <SearchBar />
       <Apropos />
     </div>
-
-    /* Menu déroulant, barre de recherche, à propos */
   );
 }
 
