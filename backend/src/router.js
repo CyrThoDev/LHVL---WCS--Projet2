@@ -13,13 +13,17 @@ connection
     console.error(err);
   });
 
-router.get("/", (req, res) => {
-  res.status(200);
-});
+router.get("/superheroes", (req, res) => {
+  let url = "SELECT * FROM superhero";
+  const value = [];
 
-router.get("/superhero", (req, res) => {
+  if (req.query.name) {
+    url += " WHERE name LIKE ?";
+    value.push(`${req.query.name}%`);
+  }
+  // SELECT * FROM superhero WHERE name LIKE '%A%';
   connection
-    .query("SELECT * FROM superhero")
+    .query(url, value)
     .then(([results]) => {
       res.json(results);
     })
