@@ -50,6 +50,18 @@ router.get("/superheroes/:id", (req, res) => {
     });
 });
 
+router.get("/categories/", (req, res) => {
+  connection
+    .query(`SELECT DISTINCT ${req.query.type} FROM superhero`)
+    .then(([results]) => {
+      res.json(results);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error retrieving data from database");
+    });
+});
+
 // const itemControllers = require("./controllers/itemControllers");
 // router.get("/items", itemControllers.browse);
 // router.get("/items/:id", itemControllers.read);
