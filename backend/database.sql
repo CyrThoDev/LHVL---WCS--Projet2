@@ -24,3 +24,8 @@ CREATE TABLE superhero (
   power int NOT NULL,
   combat int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+INSERT INTO superhero (name, slug, image_sm, image_md,gender, race, eyecolor,  fullName, work, intelligence, strength, speed, durability, power, combat)
+  VALUE ("A-Bomb", "1-a-bomb","https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/1-a-bomb.jpg", "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/md/1-a-bomb.jpg", "Male","Human", "Yellow","Richard Milhouse Jones" ,"Musician, adventurer, author; formerly talk show host", 38, 100,17, 80, 24, 64); 
