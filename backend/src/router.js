@@ -21,7 +21,7 @@ router.get("/superheroes", (req, res) => {
     url += " WHERE name LIKE ?";
     value.push(`${req.query.name}%`);
   }
-  // SELECT * FROM superhero WHERE name LIKE '%A%';
+
   connection
     .query(url, value)
     .then(([results]) => {
@@ -61,12 +61,5 @@ router.get("/categories/", (req, res) => {
       res.status(500).send("Error retrieving data from database");
     });
 });
-
-// const itemControllers = require("./controllers/itemControllers");
-// router.get("/items", itemControllers.browse);
-// router.get("/items/:id", itemControllers.read);
-// router.put("/items/:id", itemControllers.edit);
-// router.post("/items", itemControllers.add);
-// router.delete("/items/:id", itemControllers.destroy);
 
 module.exports = router;
