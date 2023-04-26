@@ -33,6 +33,23 @@ router.get("/superheroes", (req, res) => {
     });
 });
 
+router.get("/superheroes/:id", (req, res) => {
+  const { id } = req.params;
+  connection
+    .query("SELECT * FROM superhero WHERE id = ? ", [id])
+    .then(([results]) => {
+      if (results.length) {
+        res.json(results[0]);
+      } else {
+        res.sendStatus(204);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error retrieving data from database");
+    });
+});
+
 // const itemControllers = require("./controllers/itemControllers");
 // router.get("/items", itemControllers.browse);
 // router.get("/items/:id", itemControllers.read);
