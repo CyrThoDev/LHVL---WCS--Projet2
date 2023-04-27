@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer>
       <div>Les héros de la vente en ligne</div>
-      <div className="contact">
+      <div className="contact-link">
         <Link to="/contact">Contact</Link>
       </div>
     </footer>
