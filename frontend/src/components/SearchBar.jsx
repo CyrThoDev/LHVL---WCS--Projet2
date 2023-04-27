@@ -5,15 +5,16 @@ function SearchBar() {
   const [recherche, setRecherche] = useState("");
   return (
     <div className="SearchBar">
-      <div>
-        <label htmlFor="searchInput">
+      <div className="box">
+        <form name="search">
           <input
             type="text"
-            placeholder="recherche"
+            className="input"
+            name="txt"
             value={recherche}
             onChange={(e) => setRecherche(e.target.value)}
           />
-        </label>
+        </form>
       </div>
     </div>
   );
