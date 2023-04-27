@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import "../sass/header.scss";
 
 function Apropos() {
   return (
     <div>
-      <a href="/apropos" className="about">
+      <Link to="/apropos" className="about">
         À PROPOS
-        <br />
-      </a>
+      </Link>
     </div>
   );
 }
 
 export default Apropos;
+
