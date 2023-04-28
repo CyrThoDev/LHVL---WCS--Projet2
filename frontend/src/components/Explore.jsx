@@ -5,10 +5,9 @@ import "../sass/header.scss";
 function Explore() {
   const options = [
     { label: "Les Super-Catégories 🦸‍♂️", link: "/page1" },
-    { label: "Tous les Héros de A à Z", link: "/page2" },
-    { label: "Les plus populaires", link: "/page3" },
-    { label: "Tous les univers", link: "/page4" },
-    { label: "Les meilleures ventes", link: "/page5" },
+    { label: "Les plus populaires", link: "/page2" },
+    { label: "Tous les univers", link: "/page3" },
+    { label: "Les meilleures ventes", link: "/page4" },
   ];
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -39,8 +38,7 @@ function Explore() {
             EXPLORE
           </button>
           <div className={`options-container ${menuOpen ? "menu-open" : ""}`}>
-            {options.map((option, index) => {
-              if (index === 0) return null;
+            {options.map((option) => {
               return (
                 <div key={option.label}>
                   <br />
