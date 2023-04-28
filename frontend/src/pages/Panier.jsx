@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import CardHero from "../components/CardHero";
 import "../sass/Panier.scss";
 import SuperHeroes from "../assets/data/data";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Panier() {
   const [cardsData, setCardsData] = useState(SuperHeroes.slice(0, 3));
@@ -29,7 +31,7 @@ function Panier() {
 
   return (
     <>
-      <header>Ici viendra le header</header>
+      <Header />
       <div className="panier-container">
         <h1 className="panier-title">Voici ton super PANIER pour gagner !</h1>
         <div className="content-container">
@@ -96,7 +98,7 @@ function Panier() {
             Retour à mes achats
           </button>
         </Link>
-        <footer>Ici viendra le footer</footer>
+        <Footer />
       </div>
     </>
   );

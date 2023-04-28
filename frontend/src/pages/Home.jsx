@@ -1,11 +1,12 @@
 import React from "react";
 import AllCards from "./AllCards";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 function Home() {
   return (
     <div>
-      <header>Ici viendra le header de Ugo</header>
+      <Header />
       <AllCards />
       <Footer />
     </div>
