@@ -14,16 +14,6 @@ $bluecolor: #1f69aa;
 $yellowcolor: #f2cf1d;
 $greycolor: #8d8d8d;
 
-header {
-  display: flex;
-  height: 15rem;
-  justify-content: center;
-  align-items: center;
-  background-color: $whitecolor;
-  margin: 1rem;
-  font-family: $title-font;
-}
-
 main {
   font-family: $text-font;
   background-color: $whitecolor;
