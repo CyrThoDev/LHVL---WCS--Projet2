@@ -1,6 +1,5 @@
 import "../sass/header.scss";
 import Explore from "./Explore";
-import Apropos from "./Apropos";
 import SearchBar from "./SearchBar";
 
 function NavBar() {
@@ -8,7 +7,6 @@ function NavBar() {
     <div className="navigation-container">
       <Explore />
       <SearchBar />
-      <Apropos />
     </div>
   );
 }
