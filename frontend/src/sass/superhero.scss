@@ -5,6 +5,9 @@
   flex-direction: column;
   border: 2px solid black;
   border-radius: 5%;
+  background-image: url("src/assets/images/backgroundbook.png");
+  background-size: cover;
+  background-color: black;
 
   img {
     padding: 1rem;
@@ -17,11 +20,12 @@
     background-color: $bluecolor;
     border: 2px solid $bluecolor;
     border-radius: 50% 20% / 10% 40%;
+    width: inherit;
   }
   figcaption {
     text-align: center;
     margin-top: 10px;
-    color: $bluecolor;
+    color: $whitecolor;
     font-family: $category-font;
   }
 }

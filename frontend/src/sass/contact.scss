@@ -1,10 +1,5 @@
 @import "style.scss";
 
-body {
-  background-image: url("./assets/images/backgroundbook.png");
-  background-size: cover;
-}
-
 .contact-container {
   width: 80%;
   display: flex;
@@ -13,7 +8,7 @@ body {
   background: $whitecolor;
   border: 1px solid $bluecolor;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 1rem auto;
 
   h3 {
     font-family: bungee;
