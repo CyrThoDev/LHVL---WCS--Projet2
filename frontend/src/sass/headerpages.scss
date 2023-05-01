@@ -1,0 +1,30 @@
+.headerpages-container {
+  display: flex;
+  background-image: url(../assets/images/background.png);
+  flex-direction: column-reverse;
+  padding: 1rem;
+
+  .imgheader {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logopages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+    p {
+      color: black;
+      font-family: bungee;
+      font-size: 3rem;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logopages {
+    justify-content: flex-start;
+  }
+}
