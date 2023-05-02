@@ -166,41 +166,42 @@ button.default-option {
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
-    font-size: 5rem;
-  }
 
-  h2 {
-    font-size: 1.8rem;
-  }
+h1 {
+  font-size: 5rem;
+}
 
-  .logoimage img {
-    width: 125px;
-    height: 125px;
-  }
+h2 {
+  font-size: 1.8rem;
+}
 
-  .jeudecarte img {
-    width: 75px;
-    height: 75px;
-  }
+.logoimage img {
+  width: 125px;
+  height: 125px;
+}
 
-  .navigation-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+.jeudecarte img {
+  width: 75px;
+  height: 75px;
+}
 
-  .Explore-container {
-    display: flex;
-    justify-content: center;
-  }
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  button.default-option {
-    font-size: 2rem;
-  }
+.Explore-container {
+  display: flex;
+  justify-content: center;
+}
 
-  .menu-open {
-    margin-bottom: 1rem;
-  }
+button.default-option {
+  font-size: 2rem;
+}
+
+.menu-open {
+  margin-bottom: 1rem;
+}
 }
