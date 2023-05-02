@@ -37,27 +37,4 @@ jobs:
             echo "defined=false" >> $GITHUB_OUTPUT;
           fi
 
-  deploy:
-    if: needs.check-secrets.outputs.caprover-server == 'true'
-
-    runs-on: ubuntu-latest
-
-    needs: check-secrets
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v3
-
-      - name: Set up npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
-      - name: Install caprover
-        run: npm install -g caprover
-
-      - name: Deploy back
-        run: caprover deploy -h "${{ secrets.CAPROVER_SERVER }}" -p '${{ secrets.CAPROVER_PASSWORD }}' -b 'main' -a "${{ secrets.CAPROVER_BACK_APPNAME }}"
-
-      - name: Deploy front
-        run: caprover deploy -h "${{ secrets.CAPROVER_SERVER }}" -p '${{ secrets.CAPROVER_PASSWORD }}' -b 'main' -a "${{ secrets.CAPROVER_FRONT_APPNAME }}"
+  
