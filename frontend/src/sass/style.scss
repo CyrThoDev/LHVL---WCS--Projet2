@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade");
+
+@font-face {
+  font-family: "Magz";
+  src: url("../fonts/Magz.otf") format("open-type");
+}
+
+$title-font: "bungee";
+$category-font: "Magz";
+$text-font: roboto;
+$blackcolor: black;
+$whitecolor: white;
+$bluecolor: #1f69aa;
+$yellowcolor: #f2cf1d;
+$greycolor: #8d8d8d;
+
+main {
+  font-family: $text-font;
+  background-color: $whitecolor;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+
+  .carrousel {
+    height: 40rem;
+    width: 100%;
+  }
+
+  .all-ctg {
+    height: 40rem;
+    width: 100%;
+  }
+
+  .btn-ctg {
+    height: 60rem;
+  }
+}

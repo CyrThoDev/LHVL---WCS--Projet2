@@ -1,25 +1,23 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-// US 1 import
-
-// US 2 Import
-
-// US 3 import
-
-// US 4 import
-
+import Error from "./pages/Error";
+import Panier from "./pages/Panier";
 
 import "./App.css";
+import "./sass/style.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      {/** US 1 Page */}
-      {/** US 2 Page */}
-      {/** US 3 Page */}
-      {/** US 4 Page */}
-      <p>coucou</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/panier" element={<Panier />} />
+        <Route path="/*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
