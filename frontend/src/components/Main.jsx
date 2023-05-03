@@ -1,4 +1,5 @@
 import React from "react";
+import "../sass/main.scss";
 import { Link } from "react-router-dom";
 import superheromain from "../assets/images/superheromain.png";
 
