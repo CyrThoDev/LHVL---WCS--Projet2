@@ -1,201 +1,97 @@
 @import "style.scss";
 
-@media screen and (min-width: 1124px) {
-  h1 {
-    font-size: 6rem;
-    margin-bottom: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+// le header container contient le Apropos, le pnaier, l
+//le logo et slogan , le menu explore et la barre de recherche
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("background.png");
+  background-size: cover;
 
-  h2 {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    margin-left: 0.4rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 20rem;
-    justify-content: center;
-    margin: 1rem;
-    font-family: $title-font;
-  }
-
-  .navigation-container {
-    width: 100%;
+  // apropos gère le lien vers la page A propos et le panier
+  .apropos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
-  .Explore-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .default-option {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: inherit;
-    font-family: inherit;
-  }
-
-  .selected-option {
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-  }
-
-  .menu-open .options-container {
-    display: block;
-  }
-
-  .selected-option {
-    text-decoration: none;
-    color: black;
-  }
-
-  button.default-option {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    font-family: inherit;
-    color: inherit;
-    padding: 0;
-    margin-left: 2rem;
-  }
-
-  .options-container {
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 0;
-    width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    display: none;
-    top: 100%;
-    border: 1px solid #ccc;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
-    width: 23rem;
-    padding-left: 3rem;
-  }
-
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .slogan-logo-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    height: 3rem;
   }
 
   .about {
-    position: relative;
-    z-index: 1;
     cursor: pointer;
     padding: 10px;
     background: none;
     border: none;
     font-size: inherit;
-    font-family: inherit;
+    font-family: bungee;
     color: inherit;
     padding: 0;
     width: 11rem;
     margin-right: 2rem;
   }
+}
 
-  .select {
-    position: relative;
-    display: inline-block;
-  }
+// logocontainer gère le logo, les images et le slogan
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $title-font;
+  border: 1px solid black;
+  background-color: black;
+  margin: 1rem 2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-  .menu-open {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-  }
+.logoimage img {
+  width: 100px;
+  height: 100px;
+}
+
+.jeudecarte img {
+  width: 50px;
+  height: 50px;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
 }
 
 h1 {
-  font-size: 6rem;
-  margin-bottom: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  color: $whitecolor;
+  font-size: 10vw;
 }
 
 h2 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 2rem;
-}
-
-p {
-  font-size: 0.8rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  margin-left: 0.4rem;
+  color: $whitecolor;
+  font-size: 3.5vw;
 }
 
 a {
   text-decoration: none;
-  color: black;
 }
 
-header {
+// Menu
+.navigation-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 20rem;
-  justify-content: center;
-  margin: 1rem;
-  font-family: $title-font;
 }
 
-.navigation-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
 .Explore-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .default-option {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: inherit;
   font-family: inherit;
 }
 
@@ -215,67 +111,34 @@ header {
 }
 
 button.default-option {
+  width: 100%;
   background: none;
   border: none;
   cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
+  font-size: 7vw;
+  font-family: bungee;
   color: inherit;
-  padding: 0;
-  margin-left: 2rem;
 }
 
 .options-container {
-  position: absolute;
-  top: calc(100% + 5px);
-  left: 0;
   width: 100%;
   max-height: 200px;
-  overflow-y: auto;
-  background-color: #fff;
+  background-color: $blackcolor;
   border-radius: 5px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
   display: none;
   top: 100%;
-  border: 1px solid #ccc;
-  opacity: 0;
+  border: 1px solid $yellowcolor;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
-  width: 23rem;
-  padding-left: 3rem;
-}
+  width: 20rem;
+  padding: 0 1rem 1rem 1rem;
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.slogan-logo-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.about {
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  padding: 10px;
-  background: none;
-  border: none;
-  font-size: inherit;
-  font-family: inherit;
-  color: inherit;
-  padding: 0;
-  width: 11rem;
-  margin-right: 2rem;
-}
-
-.select {
-  position: relative;
-  display: inline-block;
+  a {
+    color: $whitecolor;
+    font-family: bungee;
+    font-size: 1rem;
+  }
 }
 
 .menu-open {
@@ -284,40 +147,60 @@ button.default-option {
   pointer-events: auto;
 }
 
-.box {
-  position: relative;
+//Searchbar
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.input {
-  padding: 10px;
-  width: 80px;
-  height: 80px;
-  background: none;
-  border: 4px solid #ff2d2d;
-  border-radius: 50px;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 26px;
-  color: #ffffff;
-  outline: none;
-  transition: 0.5s;
+.formsearchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+
+  input {
+    margin: 1rem 0.5rem;
+  }
 }
-.box:hover input {
-  width: 350px;
-  background: #3b3640;
-  border-radius: 10px;
-}
-.box i {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translate(-50%, -50%);
-  font-size: 26px;
-  color: #ff2d2d;
-  transition: 0.2s;
-}
-.box:hover i {
-  opacity: 0;
-  z-index: -1;
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .logoimage img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .jeudecarte img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .navigation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .Explore-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  button.default-option {
+    font-size: 2rem;
+  }
+
+  .menu-open {
+    margin-bottom: 1rem;
+  }
 }

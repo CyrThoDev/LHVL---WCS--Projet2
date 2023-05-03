@@ -2,17 +2,37 @@
 
 footer {
   font-family: "Magz";
-  margin: 1rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
-  height: 5rem;
+  height: 3rem;
   background-color: $blackcolor;
   color: $whitecolor;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
 
-  .contact {
-    padding-right: 2rem;
+  p {
+    font-size: 0.5rem;
+  }
+
+  .contact-link {
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    p {
+      font-size: 0.8rem;
+    }
+
+    .contact-link {
+      padding-right: 0.8rem;
+      font-size: 1.2rem;
+    }
   }
 }

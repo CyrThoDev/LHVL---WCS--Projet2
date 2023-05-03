@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CardHero from "../components/CardHero";
 import "../sass/Panier.scss";
 import SuperHeroes from "../assets/data/data";
-import Header from "../components/Header";
+import HeaderPages from "../components/HeaderPages";
 import Footer from "../components/Footer";
 
 function Panier() {
@@ -31,7 +31,7 @@ function Panier() {
 
   return (
     <>
-      <Header />
+      <HeaderPages />
       <div className="panier-container">
         <h1 className="panier-title">Voici ton super PANIER pour gagner !</h1>
         <div className="content-container">
@@ -66,10 +66,10 @@ function Panier() {
               </div>
             ))}
           </div>
-          <div className="rectangles-container">
-            <div className="summary-container">
-              <div className="summary-details">
-                <p>T'es super cartes 0€</p>
+          <div className="summary-container">
+            <div className="order-container">
+              <div className="order-details">
+                <p>Tes super cartes 0€</p>
                 <p>Ta super livraison 0€</p>
                 <p>Total 0€</p>
               </div>
@@ -77,15 +77,15 @@ function Panier() {
                 VALIDER MA COMMANDE
               </button>
             </div>
-            <div className="additional-rectangle">
-              <p>TON CODE PROMO</p>
+            <div className="order-container">
+              <p className="order-details">TON CODE PROMO</p>
               <input />
               <button type="button" className="validate-button">
                 Submit
               </button>
             </div>
-            <div className="additional-rectangle">
-              <p>TON CODE D'AFFILIATION</p>
+            <div className="order-container">
+              <p className="order-details">TON CODE D'AFFILIATION</p>
               <input />
               <button type="button" className="validate-button">
                 Submit
@@ -98,8 +98,8 @@ function Panier() {
             Retour à mes achats
           </button>
         </Link>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
