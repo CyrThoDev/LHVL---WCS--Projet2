@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../sass/header.scss";
-import superhero from "./superhero.png";
+import superhero from "../assets/images/superhero.png";
 import jeudecarte from "../assets/images/jeudecarteblanc.png";
 
 function Logo() {

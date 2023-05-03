@@ -5,7 +5,7 @@
 .header-container {
   display: flex;
   flex-direction: column;
-  background-image: url("src/assets/images/background.png");
+  background-image: url("background.png");
   background-size: cover;
 
   // apropos gère le lien vers la page A propos et le panier
@@ -166,42 +166,41 @@ button.default-option {
 }
 
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
 
-h1 {
-  font-size: 5rem;
-}
+  h2 {
+    font-size: 1.8rem;
+  }
 
-h2 {
-  font-size: 1.8rem;
-}
+  .logoimage img {
+    width: 125px;
+    height: 125px;
+  }
 
-.logoimage img {
-  width: 125px;
-  height: 125px;
-}
+  .jeudecarte img {
+    width: 75px;
+    height: 75px;
+  }
 
-.jeudecarte img {
-  width: 75px;
-  height: 75px;
-}
+  .navigation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
-.navigation-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
+  .Explore-container {
+    display: flex;
+    justify-content: center;
+  }
 
-.Explore-container {
-  display: flex;
-  justify-content: center;
-}
+  button.default-option {
+    font-size: 2rem;
+  }
 
-button.default-option {
-  font-size: 2rem;
-}
-
-.menu-open {
-  margin-bottom: 1rem;
-}
+  .menu-open {
+    margin-bottom: 1rem;
+  }
 }

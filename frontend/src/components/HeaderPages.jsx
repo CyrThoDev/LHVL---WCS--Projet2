@@ -1,7 +1,7 @@
 import React from "react";
 import "../sass/headerpages.scss";
 import { Link } from "react-router-dom";
-import superhero from "./superhero.png";
+import superhero from "../assets/images/superhero.png";
 import panier from "../assets/images/panier.png";
 
 function HeaderPages() {
