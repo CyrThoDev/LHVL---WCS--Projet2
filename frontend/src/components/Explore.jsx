@@ -4,9 +4,8 @@ import "../sass/header.scss";
 
 function Explore() {
   const options = [
-    { label: "Tous les héros de A à Z 🦸‍♂️", link: "/page1" },
-    { label: "Les Super-Catégories", link: "/page2" },
-    { label: "Les plus populaires", link: "/page3" },
+    { label: "Tous les héros de A à Z 🦸‍♂️", link: "/all" },
+    { label: "Les Super-Catégories", link: "/categories" },
   ];
   const [menuOpen, setMenuOpen] = useState(false);
 
