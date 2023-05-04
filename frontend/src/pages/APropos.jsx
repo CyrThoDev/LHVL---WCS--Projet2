@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom";
+import "../sass/header.scss";
+import HeaderPages from "../components/HeaderPages";
+import Footer from "../components/Footer";
 
-function APropos() {
+function Apropos() {
   return (
-    <div>
-      <Link to="/apropos" className="about">
-        À PROPOS
-      </Link>
-    </div>
+    <>
+      <HeaderPages />
+      <Footer />
+    </>
   );
 }
 
-export default APropos;
+export default Apropos;

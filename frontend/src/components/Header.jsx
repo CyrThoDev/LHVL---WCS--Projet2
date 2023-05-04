@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 import panier from "../assets/images/panier.png";
-import Apropos from "../pages/APropos";
+import Apropos from "../pages/Apropos";
 
 function Header() {
   return (
