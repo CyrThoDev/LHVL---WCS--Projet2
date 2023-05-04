@@ -11,10 +11,21 @@ import "./App.css";
 import "./sass/style.scss";
 
 function App() {
-  const [basket, setBasket] = useState([1, 3, 5]);
+  const [basket, setBasket] = useState([
+    { id: 1, value: 1 },
+    { id: 3, value: 3 },
+    { id: 5, value: 4 },
+  ]);
 
-  const handleBasket = () => {
-    setBasket([]);
+  const handleBasket = (heroe, value) => {
+    if (value > 0) {
+      const newBasket = [...basket];
+      const index = newBasket.indexOf(heroe);
+      newBasket[index].value = value;
+      setBasket(newBasket);
+    } else {
+      setBasket(basket.filter((el) => el.id !== heroe.id));
+    }
   };
 
   return (
