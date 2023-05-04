@@ -6,7 +6,7 @@ export default function AllCards() {
   const [SuperHeroes, setSuperHeroes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/superheroes/")
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/superheroes`)
       .then((result) => result.json())
       .then((superheroes) => {
         setSuperHeroes(superheroes);
