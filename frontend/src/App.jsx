@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Panier from "./pages/Panier";
 import AllCategories from "./pages/AllCategories";
-import APropos from "./pages/Apropos";
+import APropos from "./pages/APropos";
 
 import "./App.css";
 import "./sass/style.scss";
