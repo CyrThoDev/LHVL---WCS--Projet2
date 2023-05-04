@@ -62,4 +62,17 @@ router.get("/categories/", (req, res) => {
     });
 });
 
+router.get("/basket", (req, res) => {
+  const list = req.query.list.split(",");
+
+  connection
+    .query(`SELECT * FROM superhero WHERE id in ( ? ) `, [list])
+    .then(([results]) => {
+      res.status(200).json(results);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error retrieving data from database");
+    });
+});
 module.exports = router;
