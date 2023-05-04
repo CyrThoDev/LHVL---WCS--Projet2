@@ -2,18 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import CardHero from "../components/CardHero";
 import "../sass/Panier.scss";
-import SuperHeroes from "../assets/data/data";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Panier({ basket }) {
-  const [cardsData, setCardsData] = useState(SuperHeroes.slice(0, 3));
+  const [cardsData, setCardsData] = useState([]);
   const [quantities, setQuantities] = useState([0, 0, 0]);
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_BACKEND_URL}/basket?list=${basket}`)
       .then((res) => res.json())
-      .then((heroes) => console.info(heroes))
+      .then((heroes) => setCardsData(heroes))
       .catch((err) => console.error(err));
   }, []);
 
