@@ -1,6 +1,6 @@
 import "../sass/allcards.scss";
 import { useState, useEffect } from "react";
-import CardHero from "../components/CardHero";
+import CardHero from "./CardHero";
 
 export default function AllCards() {
   const [SuperHeroes, setSuperHeroes] = useState([]);

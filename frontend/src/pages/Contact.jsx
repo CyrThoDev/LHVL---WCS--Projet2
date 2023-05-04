@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import superheromail from "./superheromail.png";
+import superheromail from "../assets/images/superheromail.png";
 import "../sass/contact.scss";
 import HeaderPages from "../components/HeaderPages";
 
