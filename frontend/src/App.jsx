@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Panier from "./pages/Panier";
 import AllCategories from "./pages/AllCategories";
+import APropos from "./pages/APropos";
 
 import "./App.css";
 import "./sass/style.scss";
@@ -36,6 +37,7 @@ function App() {
           path="/all"
           element={<AllCardsDisplay handleBasket={handleBasket} />}
         />
+        <Route path="/apropos" element={<APropos />} />
         <Route path="/categories" element={<AllCategories />} />
         <Route path="/contact" element={<Contact />} />
         <Route

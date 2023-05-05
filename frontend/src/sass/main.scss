@@ -15,7 +15,13 @@
 }
 
 .text-container {
+  text-align: center;
   margin-top: 3rem;
+  font-size: 2rem;
+
+  h2 {
+    font-family: bungee;
+  }
 }
 
 .categories-container {

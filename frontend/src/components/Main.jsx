@@ -16,13 +16,12 @@ function Main() {
         <div className="text-container">
           <h2>Bienvenue sur le site des héros de la vente en ligne</h2>
           <p>
-            LE site de référence pour l'achat en ligne de vos cartes de Super
-            Héros.
+            Nous sommes LE site de référence pour l'achat en ligne de vos cartes
+            de Super Héros.{" "}
           </p>
           <p>
-            {" "}
-            Newbie ou aguerri , vous trouverez toutes les cartes que vous
-            souhaitez dans notre vaste choix de plus de 700 cartes.
+            Que vous soyez Newbie ou aguerri , vous trouverez toutes les cartes
+            que vous souhaitez dans notre vaste choix de plus de 700 cartes.
           </p>
         </div>
       </div>
