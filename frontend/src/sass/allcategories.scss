@@ -1,7 +1,25 @@
-// .allcategories-container {
+@import "style.scss";
+.categories-title {
+  text-align: center;
+  color: black;
+  font-family: bungee;
+}
 
-// }
-
-// .select {
-//   width: 80%;
-// }
+.categories-button {
+  display: flex;
+  justify-content: center;
+}
+.filter-button {
+  font-family: bungee;
+  color: white;
+  background-color: $bluecolor;
+  border: 2px solid $bluecolor;
+  border-radius: 50% 20%/10% 40%;
+  margin: 1rem;
+}
+.filtres-container {
+  label {
+    align-items: center;
+    width: 100%;
+  }
+}

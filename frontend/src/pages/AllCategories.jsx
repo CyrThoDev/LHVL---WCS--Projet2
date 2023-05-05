@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import "../sass/allcategories.scss";
 import HeaderPages from "../components/HeaderPages";
 import CardHero from "../components/CardHero";
+import Footer from "../components/Footer";
 import "../sass/allcards.scss";
 
 function Allcategories() {
@@ -37,33 +38,45 @@ function Allcategories() {
   return (
     <div className="allcategories-container">
       <HeaderPages />
-      <h2>Selectionnez votre catégorie</h2>
-      <button type="button" onClick={() => handleParam("gender")}>
-        Genre
-      </button>
-      <button type="button" onClick={() => handleParam("race")}>
-        Race
-      </button>
-      {Filters.length > 0 && (
-        <label htmlFor="GenderSelect">
-          Filtrer par
-          <select
-            id="Select"
-            onChange={(event) => setUserSearch(event.target.value)}
-            value={userSearch}
-          >
-            <option value="">---</option>
-            {Filters.map((filter) => (
-              <option value={filter}>{filter}</option>
-            ))}
-          </select>
-        </label>
-      )}
+      <h2 className="categories-title">Selectionnez votre catégorie :</h2>
+      <div className="categories-button">
+        <button
+          className="filter-button"
+          type="button"
+          onClick={() => handleParam("gender")}
+        >
+          Genre
+        </button>
+        <button
+          className="filter-button"
+          type="button"
+          onClick={() => handleParam("race")}
+        >
+          Race
+        </button>
+      </div>
+      <div className="filtres-container">
+        {Filters.length > 0 && (
+          <label htmlFor="GenderSelect">
+            <select
+              id="Select"
+              onChange={(event) => setUserSearch(event.target.value)}
+              value={userSearch}
+            >
+              <option value="">---</option>
+              {Filters.map((filter) => (
+                <option value={filter}>{filter}</option>
+              ))}
+            </select>
+          </label>
+        )}
+      </div>
       <div className="allCards">
         {Superheroes.map((superhero) => (
           <CardHero superhero={superhero} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
