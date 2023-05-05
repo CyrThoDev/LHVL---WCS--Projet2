@@ -12,18 +12,18 @@ import "./App.css";
 import "./sass/style.scss";
 
 function App() {
-  const [basket, setBasket] = useState([
-    { id: 1, value: 1 },
-    { id: 3, value: 3 },
-    { id: 5, value: 4 },
-  ]);
+  const [basket, setBasket] = useState([]);
 
   const handleBasket = (heroe, value) => {
     if (value > 0) {
       const newBasket = [...basket];
-      const index = newBasket.indexOf(heroe);
-      newBasket[index].value = value;
-      setBasket(newBasket);
+      const index = newBasket.findIndex((el) => el.id === heroe.id);
+      if (index !== -1) {
+        newBasket[index].value = value;
+        setBasket(newBasket);
+      } else {
+        setBasket([...basket, { ...heroe, value }]);
+      }
     } else {
       setBasket(basket.filter((el) => el.id !== heroe.id));
     }
@@ -33,7 +33,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/all" element={<AllCardsDisplay />} />
+        <Route
+          path="/all"
+          element={<AllCardsDisplay handleBasket={handleBasket} />}
+        />
         <Route path="/apropos" element={<APropos />} />
         <Route path="/categories" element={<AllCategories />} />
         <Route path="/contact" element={<Contact />} />

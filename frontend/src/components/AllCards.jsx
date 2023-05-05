@@ -2,7 +2,7 @@ import "../sass/allcards.scss";
 import { useState, useEffect } from "react";
 import CardHero from "./CardHero";
 
-export default function AllCards() {
+export default function AllCards({ handleBasket }) {
   const [SuperHeroes, setSuperHeroes] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function AllCards() {
   return (
     <div className="allCards">
       {SuperHeroes.map((superhero) => (
-        <CardHero superhero={superhero} />
+        <CardHero superhero={superhero} handleBasket={handleBasket} />
       ))}
     </div>
   );

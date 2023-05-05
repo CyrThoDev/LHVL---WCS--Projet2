@@ -1,7 +1,7 @@
 import React from "react";
 import "../sass/modal.scss";
 
-function Modal({ superhero, setOpenModal }) {
+function Modal({ superhero, setOpenModal, addToBasket }) {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
@@ -42,7 +42,9 @@ function Modal({ superhero, setOpenModal }) {
           >
             annuler
           </button>
-          <button type="button">ajout au panier</button>
+          <button type="button" onClick={addToBasket}>
+            Ajouter au panier
+          </button>
         </div>
       </div>
     </div>
