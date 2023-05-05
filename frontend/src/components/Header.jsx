@@ -6,7 +6,12 @@ import panier from "../assets/images/panier.png";
 
 function Header() {
   return (
-    <div className="header-container">
+    <div
+      className="header-container"
+      style={{
+        backgroundImage: `url("./src/assets/images/background.png")`,
+      }}
+    >
       <div className="apropos">
         <Link to="/apropos">A PROPOS</Link>
         <Link to="/panier">
