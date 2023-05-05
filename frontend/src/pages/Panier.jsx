@@ -10,9 +10,9 @@ function Panier({ basket, handleBasket }) {
 
   useEffect(() => {
     fetch(
-      `${import.meta.env.VITE_BACKEND_URL}/basket?list=${basket.map(
-        (el) => el.id
-      )}`
+      `${import.meta.env.VITE_BACKEND_URL}/superheroes?ids=${basket
+        .map((el) => el.id)
+        .join(",")}`
     )
       .then((res) => res.json())
       .then((heroes) => setCardsData(heroes))

@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import "../sass/superhero.scss";
 import Modal from "./Modal";
 
-export default function CardHero({ superhero }) {
+export default function CardHero({ superhero, handleBasket }) {
   const [modalOpen, setModalOpen] = useState(false);
+
+  const addToBasket = () => {
+    handleBasket(superhero, 1);
+    setModalOpen(false);
+  };
 
   return (
     <figure className="superhero-container">
@@ -17,7 +22,13 @@ export default function CardHero({ superhero }) {
       >
         Description
       </button>
-      {modalOpen && <Modal superhero={superhero} setOpenModal={setModalOpen} />}
+      {modalOpen && (
+        <Modal
+          superhero={superhero}
+          setOpenModal={setModalOpen}
+          addToBasket={addToBasket}
+        />
+      )}
     </figure>
   );
 }
