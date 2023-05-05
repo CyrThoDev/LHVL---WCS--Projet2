@@ -3,10 +3,16 @@ import "../sass/headerpages.scss";
 import { Link } from "react-router-dom";
 import superhero from "../assets/images/superhero.png";
 import panier from "../assets/images/panier.png";
+import background from "../assets/images/background.png";
 
 function HeaderPages() {
   return (
-    <div className="headerpages-container">
+    <div
+      className="headerpages-container"
+      style={{
+        backgroundImage: `url(${background})`,
+      }}
+    >
       <Link to="/">
         <div className="logopages">
           <p>LHVL</p>
