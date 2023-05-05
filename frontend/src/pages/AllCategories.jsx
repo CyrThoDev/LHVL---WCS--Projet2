@@ -18,7 +18,7 @@ function Allcategories() {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/superheroes?${type}=${userSearch}`)
+    fetch(`VITE_BACKEND_URL/superheroes?${type}=${userSearch}`)
       .then((result) => result.json())
       .then((superheroes) => {
         setSuperHeroes(superheroes);
@@ -27,7 +27,7 @@ function Allcategories() {
 
   useEffect(() => {
     if (type === "gender" || type === "race") {
-      fetch(`http://localhost:5000/categories?type=${type}`)
+      fetch(`VITE_BACKEND_URL/categories?type=${type}`)
         .then((result) => result.json())
         .then((filters) => {
           setFilters(filters);
