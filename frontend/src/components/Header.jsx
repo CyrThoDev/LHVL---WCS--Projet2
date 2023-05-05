@@ -2,7 +2,8 @@ import "../sass/header.scss";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-import background from "../assets/images/background.png"
+import panier from "../assets/images/panier.png";
+import background from "../assets/images/background.png";
 
 function Header() {
   return (
